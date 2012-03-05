@@ -1,0 +1,52 @@
+h1 {
+  margin-bottom: 0.5em;
+}
+
+h1 a, h1 a:visited {
+  color: black;
+}
+
+#post {
+  font-size: 1.3em;
+}
+
+#post h2 {
+  margin-bottom: 0;
+}
+
+#date {
+  margin-bottom: 1em;
+}
+
+#archive li {
+  font-size: 1.2em;
+}
+
+#archive li abbr {
+  padding-left: 1em;
+}
+
+code {
+  color: #222;
+}
+
+pre {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin-left: 1em;
+  padding: 0.5em;
+  overflow: auto;
+}
+
+pre code {
+  color: black;
+}
+
+a, a:visited {
+  color: navy;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
