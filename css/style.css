@@ -50,3 +50,17 @@ a, a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+#footer {
+  background-color: #333;
+  border-top: 1px solid #555;
+}
+
+#footer .content {
+  color: white;
+  font-size: 1.2em;
+}
+
+#footer .content, #footer .twitter {
+  padding: 1em 0;
+}
