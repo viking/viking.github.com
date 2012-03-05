@@ -130,12 +130,12 @@ source tree. Make sure to make the script executable:
 Now, edit `/etc/pam.d/smtp` (which should be a new file) and add the
 following:
 
-    auth required pam_exec.so expose_authtok /var/rails/foo/current/bin/pam_foo
+    auth required pam_exec.so expose_authtok /u/apps/foo/current/bin/pam_foo
     account required pam_permit.so
 
 This configures the `smtp` PAM service to use your script. The `auth`
 line tells PAM to use the `pam_exec.so` module to run the script
-located at `/var/rails/foo/current/bin/pam_foo` and to put the user's
+located at `/u/apps/foo/current/bin/pam_foo` and to put the user's
 password on `STDIN`. The password is null terminated, hence the
 `chomp` in the above example script. The script exits with different
 error codes depending on the outcome.
