@@ -76,8 +76,8 @@ the `OPTIONS` variable:
     OPTIONS="-c -m /var/spool/postfix/var/run/saslauthd"
 
 The reason for this is that Postfix runs in a chrooted environment, so
-the default command line option of `-m /var/run/saslauthd` will
-created a named socket that Postfix can't find. Changing it to
+the default command line option of `-m /var/run/saslauthd` will create
+a named socket that Postfix can't find. Changing it to
 `/var/spool/postfix/var/run/saslauthd` puts the named socket in
 Postfix's chrooted environment.
 
